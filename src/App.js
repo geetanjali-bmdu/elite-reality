@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import HighlySkilled from './componets/highly-skiled/highly-skilled';
+import Intro from './componets/intro/intro';
+import StepsForm from './componets/steps-form/steps-form';
+import Uppersection from './componets/uppersection';
+
 
 function App() {
+  const [intro, setIntro] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {intro?<Intro setIntro = {setIntro}/>:""}
+    <Uppersection setIntro = {setIntro}/>
+
+
+    <HighlySkilled/>
+    <StepsForm/>
+    
+    <div className='check-1000'></div>
     </div>
   );
 }
