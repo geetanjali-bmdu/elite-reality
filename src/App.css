@@ -1,26 +1,31 @@
 .logo-img{
-  height: 10vh;
   opacity: 50%;
-  /* -webkit-filter: invert(100%); /* Safari/Chrome *t/
-  /*filter: invert(100%); */
+  float: left;
+}
+
+.hover-before{
+  margin-left: 50px;
+  position: relative;
+
 }
 .hover-before::before {
   content: "";
   width: 30px;
-  background-color: transparent;
   display: inline-block;
   transition: build 2s;
-transform: left;
+  transform: left;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  left: -30px;
+  height: 1px;
+  background-color: white;
+  transition: width .3s linear;
+  transform-origin: left;
 }
 .hover-before:hover::before{
-  border-bottom: #fff solid  1px;
-  color: #ffffff;
-  position: relative;
-  left: 0px;
-
-  height: 0px;
-  transition: transform .3s ease-out;
-  transform-origin: left;
+  width: 30px;
 }
 .nav-link-font{
   font-weight: 500;
@@ -45,34 +50,23 @@ color: #ffffff;
 {
   font-family: 'Marcellus', serif;
   color: white;
-  font-size: 13vh;
-  font-weight: 300;
-  line-height: 80%;
-
+  opacity: 1;
+  font-size: 80px;
+}
+.logo-img
+{
+  width: 10vw;
 }
 .para-upper
 {
-  color: #ddd;
-text-align: center;
-padding:5% 0;
-line-height: 180%;
+background: transparent;
+color: #fff;
+margin-top: 15px;
+
 }
 
-.btn{
-  background-color: rgba(0,0,0,0.1);
-  color: #ddd;
-  border: solid white 2px;
-  padding: 1%;
-  font-size: larger;
-padding: 1% 5%;
-margin: 5% 10%;
- 
-}
-.mid-contents{
-  align-items: center;
-padding: 8% 0 40% 0; 
-height: 80vh;
-}
+
+
 
 .arrowleft,.arrowright
 {
@@ -210,7 +204,7 @@ margin: 5px;
 
 .highlly-skilled-para{
   color: white;
-  width: 50%;
+  width: 70%;
   padding: 4% 0;
   font-weight: 400;
     font-size: 44px;
@@ -242,6 +236,29 @@ margin: 5px;
 .highly-img{
   position: relative;
   right: 30%;
+}
+@media screen and (max-width: 971px){
+  .highly-img{
+    right: 0;
+  }
+  .from-image{
+    margin: 30% 0;
+  }
+}
+.uppersection-mobile{
+  background-image: url("https://halstein.qodeinteractive.com/wp-content/uploads/2021/10/h11-rev-img-02.jpg");
+}
+
+@media screen and (width <= 955) {
+  .uppersection{
+    display: none;
+  }
+}
+@media screen  and (width > 955){
+  .uppersection-mobile
+  {
+    display: none;
+  }
 }
 .step-form{
   font-weight: 400;
@@ -288,3 +305,31 @@ input[type=date], input[type=email], input[type=number], input[type=password], i
     background-color: transparent;
   }
   
+  .div{
+    margin: 10% 2%;
+  }
+
+
+  @media screen and (min-width: 889px) {
+    /* STYLES HERE */
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 930px) {
+    .title{
+      font-size: 40px;
+    }
+ 
+}
+
+
+.sign-img{
+width: 200px;
+}
+
+
+.navbar-m{
+  position: absolute;
+  z-index: 7;
+  width: 100%;
+
+}

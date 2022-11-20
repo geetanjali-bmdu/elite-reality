@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from "../../logi.png";
 function MyNav(props) {
   return (
-    <Navbar className='bg-trasparent' collapseOnSelect expand="lg"  variant="dark">
+    <Navbar className='bg-trasparent navbar-m' collapseOnSelect expand="lg"  variant="dark">
       <Container>
         <Navbar.Brand href="#home">
             <img className="logo-img" src={logo} alt="logo img" />

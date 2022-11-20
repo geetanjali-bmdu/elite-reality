@@ -3,9 +3,11 @@ import Form from './form'
 
 export default function Right() {
   return (
-<>
-<Form/>
+<div className="m-3 p-3">
 
-</>
+<Form/>
+</div>
+
+
   )
 }

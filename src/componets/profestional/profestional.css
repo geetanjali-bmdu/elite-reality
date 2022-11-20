@@ -1,0 +1,42 @@
+.contnet-heading{
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.227em;
+    font-family: Marcellus,serif;
+    margin: 25px 0;
+    text-align: left;
+    color: white;
+}
+.contnet-para{
+    text-align: left;
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    line-height: 1.75em;
+    font-weight: 300;
+    margin: 25px 0 0 0;
+    color: white;
+}
+.btn-m{
+    color: white;
+    border-radius: 0;
+    padding: 6px 40px;
+    margin-top: 50px;
+}
+.content-box{
+   width: 363px;
+   height:370.962px;
+   background-color: transparent;
+   padding-left: 10px;
+   padding-top: 20px;
+}
+
+.profestional-block{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: fixed;
+    background-image: url("https://halstein.qodeinteractive.com/wp-content/uploads/2021/10/h11-img-03.jpg");
+    /* background-size:     cover;                      <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
